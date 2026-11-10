@@ -1,5 +1,7 @@
-# Cyclone
+# Cyclone — code owners.
 
-* `admin` — repository admins
-* `maintain` — release owners
-* `crsuvo100-gif` — primary maintainer
+# `*` means every file in the repository is reviewed by @crsuvo100-gif.
+# "admin" / "maintain" roles are enforced through branch protection
+# ("Require pull request reviews" + "Restrict who can push"), not in this file.
+
+* @crsuvo100-gif

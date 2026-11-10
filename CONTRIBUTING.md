@@ -18,8 +18,8 @@ stepping on the project rules below.
 ## Local workflow
 
 ```bash
-git clone git@github.com:crsuvo100-gif/MOON.git
-cd MOON
+git clone git@github.com:crsuvo100-gif/Cyclone.git
+cd Cyclone
 python -m venv .venv
 . .venv/bin/activate
 pip install -e .[runtime]
