@@ -1,5 +1,5 @@
 # ---------------------------------------------------------------------------
-# CYCLONE TERMINAL AI V10 - Optional runtime extras (best-effort).
+# Cyclone - Optional runtime extras (best-effort).
 # MOON works without these and degrades gracefully when absent.
 # Install with: pip install -r requirements-optional.txt
 # ---------------------------------------------------------------------------

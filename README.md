@@ -1,4 +1,4 @@
-# CYCLONE TERMINAL AI V10.0
+# Cyclone.0
 
 A local-first, futuristic AI terminal with a generated female holographic assistant avatar. Built with vanilla HTML/CSS/JavaScript and a Node.js server; designed for editing in VS Code.
 
@@ -55,7 +55,7 @@ Run `npm start`, open the terminal, then enter `bindagents` (or `providers` → 
 
 ## V10 durability and interaction upgrade
 
-- Durable local state stored outside the served project folder at `~/.cyclone-terminal-ai/state-v10.json` (Windows: under the current user's home directory). Override with `CYCLONE_DATA_DIR` for isolated profiles or backups.
+- Durable local state stored outside the served project folder at `~/.cyclone/state-v10.json` (Windows: under the current user's home directory). Override with `CYCLONE_DATA_DIR` for isolated profiles or backups.
 - Workflow checkpoints, step status, timestamps, and a bounded audit trail persist across server restarts. Up to 100 workflows are retained.
 - Approved editor saves retain up to 50 rollback snapshots across restarts. Rollback refuses to overwrite a file whose current content no longer matches the saved snapshot hash.
 - External-agent binding metadata persists; API secrets are deliberately excluded from disk and must be re-entered after restart. Primary provider keys set in environment variables remain the recommended deployment method.

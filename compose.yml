@@ -1,11 +1,11 @@
-# CYCLONE TERMINAL AI V10 — Docker Compose
+# Cyclone — Docker Compose
 
 version: "3.9"
 
 services:
   cyclone:
     build: .
-    container_name: cyclone-terminal-ai
+    container_name: cyclone
     env_file:
       - .env
     environment:

@@ -10,7 +10,7 @@ import sys
 import json
 
 # Add project to path
-project = "/home/meow/Projects/MOON/CYCLONE_TERMINAL_AI_V10"
+project = "/home/meow/Projects/MOON/Cyclone"
 sys.path.insert(0, project)
 
 from apps.cyclone.connector.interface import (

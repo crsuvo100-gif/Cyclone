@@ -1,4 +1,4 @@
-# CYCLONE TERMINAL AI V10 — build & run Makefile
+# Cyclone — build & run Makefile
 # Targets: help run test build serve clean install verify live
 PY := env -u PYTHONPATH .venv/bin/python
 NODE := node

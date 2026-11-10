@@ -1,7 +1,7 @@
 # MOON V12.0 — CURRENT-STATE REPORT (COMPLETE)
 
 **Project root:** `/home/meow/Projects/MOON` (git repo, branch `main`, clean)
-**Working copy:** `CYCLONE_TERMINAL_AI_V10` (subdirectory inside the repo root)
+**Working copy:** `Cyclone` (subdirectory inside the repo root)
 **Status:** COMPLETE — all open verification items resolved; no existing work destroyed.
 
 ---
@@ -49,11 +49,11 @@ The V12.0 ULTIMATE AUTONOMOUS AI ASSISTANT ECOSYSTEM is organised as:
 
 | # | File | Change |
 |---|---|---|
-| 1 | `CYCLONE_TERMINAL_AI_V10/inventory.json` | **NEW** — accurate git state (branch main, clean, 275 skills, 34 skill dirs, 5 app modules, 45 tests, 20 scripts, Ollama model inventory) |
+| 1 | `Cyclone/inventory.json` | **NEW** — accurate git state (branch main, clean, 275 skills, 34 skill dirs, 5 app modules, 45 tests, 20 scripts, Ollama model inventory) |
 | 2 | `voices/registry.json` | Path corrected → `/home/meow/Projects/MOON/voices/alice.wav` (was `MOON-AI/...`) |
 | 3 | `tools/vscode/settings.json` | Deprecated `python.pythonPath` → `python.defaultInterpreterPath` (2 copies migrated) |
 
-- **Untracked (intentional):** the entire `CYCLONE_TERMINAL_AI_V10/` new working copy, `.qwen/`, `.verify_deepproof.py`, and probe scripts — these are new deliverables, not destruction.
+- **Untracked (intentional):** the entire `Cyclone/` new working copy, `.qwen/`, `.verify_deepproof.py`, and probe scripts — these are new deliverables, not destruction.
 - **`.env` (runtime-only)** is gitignored — not committed; intended by design.
 
 ---

@@ -41,8 +41,8 @@ DEFAULT_MONITOR_DIR = Path.home() / ".moon" / "vscode_monitors"
 DEFAULT_MONITOR_DIR.mkdir(parents=True, exist_ok=True)
 
 PROJECT_CHAIN = [
-    Path("/home/meow/Projects/MOON/CYCLONE_TERMINAL_AI_V10"),
-    Path.home() / "Projects" / "MOON" / "CYCLONE_TERMINAL_AI_V10",
+    Path("/home/meow/Projects/MOON/Cyclone"),
+    Path.home() / "Projects" / "MOON" / "Cyclone",
 ]
 
 VS_CODE_DIR = ".vscode"

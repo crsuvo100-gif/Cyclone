@@ -57,7 +57,7 @@ def _resolve_cyclone_dir() -> Path:
     here = Path(__file__).resolve().parent.parent  # <MOON>/
     candidates = (
         here / "apps" / "cyclone",
-        here / "MOON-AI" / "CYCLONE_TERMINAL_AI_V10",
+        here / "MOON-AI" / "Cyclone",
         Path.cwd() / "apps" / "cyclone",
     )
     for candidate in candidates:

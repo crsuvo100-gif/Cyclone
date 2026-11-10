@@ -6,7 +6,7 @@ code. This lets the CYCLONE browser (served at ``/cyclone``) call MOON's
 checks, provider config, agent registry, tools registry, sandbox executor,
 orchestrator, and memory layers.
 
-CYCLONE endpoint contract implemented here (source: CYCLONE_TERMINAL_AI_V10/app.js):
+CYCLONE endpoint contract implemented here (source: Cyclone/app.js):
 
   GET  /api/health                 → {ok, node, uptime, [version]}
   GET  /api/providers              → {presets:[{id,label,baseUrl,model}], baseUrl, model, provider, configured}

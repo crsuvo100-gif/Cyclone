@@ -28,5 +28,5 @@
   "success_criteria": "overall_eval=1.0",
   "created_at": "",
   "updated_at": "",
-  "module_path": "/home/meow/Projects/MOON/CYCLONE_TERMINAL_AI_V10/data/agents/staging/synthesize_a_quuxish_lumivox_datamap_from_raw_telemetry_1dfd/gen_synthesize_a_quuxish_lumivox_datamap_from_raw_telemetry_1dfd.py"
+  "module_path": "/home/meow/Projects/MOON/Cyclone/data/agents/staging/synthesize_a_quuxish_lumivox_datamap_from_raw_telemetry_1dfd/gen_synthesize_a_quuxish_lumivox_datamap_from_raw_telemetry_1dfd.py"
 }

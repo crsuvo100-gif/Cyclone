@@ -23,7 +23,7 @@ from typing import Any
 logger = logging.getLogger("vscode_bridge")
 
 # Default relative to the MOON project root
-DEFAULT_PROJECT_ROOT = Path("/home/meow/Projects/MOON/CYCLONE_TERMINAL_AI_V10")
+DEFAULT_PROJECT_ROOT = Path("/home/meow/Projects/MOON/Cyclone")
 
 # ---------------------------------------------------------------------------
 # Health check helpers

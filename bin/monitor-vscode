@@ -5,7 +5,7 @@
 
 set -euo pipefail
 
-PROJECT_ROOT="/home/meow/Projects/MOON/CYCLONE_TERMINAL_AI_V10"
+PROJECT_ROOT="/home/meow/Projects/MOON/Cyclone"
 MONITOR_PID="/home/meow/.moon/vscode_monitor.pid"
 LOG_DIR="/home/meow/.moon/vscode_monitors"
 

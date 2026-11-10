@@ -1,8 +1,8 @@
-# CYCLONE TERMINAL AI V10 — PROJECT PLAN
+# Cyclone — PROJECT PLAN
 
 ## Project Overview
-- **Project Name:** CYCLONE TERMINAL AI V10.0 (MOON V13.0 Extension)
-- **Project Root:** /home/meow/Projects/MOON/CYCLONE_TERMINAL_AI_V10
+- **Project Name:** Cyclone.0 (MOON V13.0 Extension)
+- **Project Root:** /home/meow/Projects/MOON/Cyclone
 - **Type:** Local-first AI terminal ecosystem (Python backend + Node.js frontend + Voice + Agent connectors)
 - **Status:** IN PROGRESS
 
@@ -53,4 +53,4 @@
 
 ## Backup Strategy
 - Local: /home/meow/backup-YYYYMMDD-HHMMSS.tar.gz
-- Reports: /home/meow/Project-Reports/CYCLONE_TERMINAL_AI_V10/
+- Reports: /home/meow/Project-Reports/Cyclone/

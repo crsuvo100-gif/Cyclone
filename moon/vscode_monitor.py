@@ -19,7 +19,7 @@ import sys
 from pathlib import Path
 
 # Ensure the project root is on sys.path
-PROJECT_ROOT = Path("/home/meow/Projects/MOON/CYCLONE_TERMINAL_AI_V10")
+PROJECT_ROOT = Path("/home/meow/Projects/MOON/Cyclone")
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
@@ -165,7 +165,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument(
         "--project-root", type=Path,
         default=PROJECT_ROOT,
-        help="path to the MOON project root (default: CYCLONE_TERMINAL_AI_V10)",
+        help="path to the MOON project root (default: Cyclone)",
     )
     parser.add_argument(
         "--interval", type=int, default=30,
