@@ -1,0 +1,13 @@
+{
+  "id": "MOON-AI",
+  "capabilities": [
+    "agent.inspection",
+    "tool.execution",
+    "code.generation",
+    "documentation",
+    "research",
+    "data.analysis"
+  ],
+  "version": "13.0",
+  "protocol": "rest"
+}

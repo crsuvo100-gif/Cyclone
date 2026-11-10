@@ -1,0 +1,48 @@
+# Phase 1: Universal Agent Connector + HERMES Integration Configuration
+
+connector:
+  enabled: true
+  max_connections: 10
+  default_timeout: 30
+  reconnect_delay: 5
+
+adapters:
+  rest:
+    enabled: true
+    timeout: 30
+  websocket:
+    enabled: true
+    ping_interval: 30
+  ipc:
+    enabled: true
+    timeout: 10
+
+hermes:
+  enabled: true
+  name: "HERMES"
+  protocol: "ipc"
+  max_tasks: 100
+  allowed_capabilities:
+    - "agent.inspection"
+    - "code.generation"
+    - "feature.development"
+    - "documentation"
+    - "testing"
+    - "build.compilation"
+    - "integration"
+
+permissions:
+  default_scope: "read"
+  required_approval:
+    - "execute"
+    - "write"
+
+health:
+  interval: 30
+  timeout: 10
+  max_failures: 5
+
+logging:
+  level: "INFO"
+  file: "~/.hermes/connector.log"
+  audit: true

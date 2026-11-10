@@ -1,0 +1,32 @@
+{
+  "id": "translate_ancient_runic_script_to_readable_json_schema_b01ce",
+  "name": "translate_ancient_runic_script_to_readable_json_schema_b01ce",
+  "version": "1.0.0",
+  "description": "Agent for: translate ancient runic script to readable json schema b01ceb8b",
+  "capabilities": [
+    "translate ancient runic script to readable json schema b01ceb8b",
+    "translate",
+    "ancient",
+    "runic",
+    "script",
+    "readable",
+    "json",
+    "schema",
+    "b01ceb8b"
+  ],
+  "required_tools": [],
+  "permissions": [
+    "READ"
+  ],
+  "risk_level": "low",
+  "input_schema": "text",
+  "output_schema": "text",
+  "dependencies": [],
+  "status": "active",
+  "source": "factory",
+  "role_group": "",
+  "success_criteria": "overall_eval=1.0",
+  "created_at": "",
+  "updated_at": "",
+  "module_path": "/home/meow/Projects/MOON-AI/data/agents/staging/translate_ancient_runic_script_to_readable_json_schema_b01ce/gen_translate_ancient_runic_script_to_readable_json_schema_b01ce.py"
+}

@@ -1,0 +1,34 @@
+# CYCLONE TERMINAL AI V10 — Docker Compose
+
+version: "3.9"
+
+services:
+  cyclone:
+    build: .
+    container_name: cyclone-terminal-ai
+    env_file:
+      - .env
+    environment:
+      - OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-http://localhost:11434}
+      - MODEL=${MODEL:-nemotron-3-super-120b-a12b:free}
+      - MOON_PORT=${MOON_PORT:-8777}
+      - PYTHONUNBUFFERED=1
+    ports:
+      - "${MOON_PORT:-8777}:8777"
+    volumes:
+      - ./app:/app/app:ro
+      - ./apps:/app/apps:ro
+      - ./voices:/app/voices:ro
+    restart: unless-stopped
+
+  # Optional: pre-warm Ollama models. Remove or comment out to run standalone.
+  # ollama:
+  #   image: ollama/ollama
+  #   ports:
+  #     - "11434:11434"
+  #   volumes:
+  #     - ollama_data:/root/.ollama
+  #   restart: unless-stopped
+
+volumes:
+  ollama_data:

@@ -1,0 +1,20 @@
+{
+  "name": "huggingface",
+  "version": "latest",
+  "status": "verified",
+  "source": "builtin",
+  "runtime": "builtin",
+  "source_url": "",
+  "repository": "",
+  "install_method": "builtin",
+  "permissions": [
+    "workspace.read",
+    "workspace.write"
+  ],
+  "network_required": false,
+  "sandbox_required": true,
+  "dependencies": [],
+  "verified_at": "2026-11-03T23:46:15Z",
+  "health": "healthy",
+  "notes": "builtin tool 'huggingface' present"
+}

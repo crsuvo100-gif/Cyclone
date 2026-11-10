@@ -1,0 +1,13 @@
+{
+  "agent_id": "agent1",
+  "task_id": "task1",
+  "state": "executing",
+  "context": {},
+  "progress": 0.0,
+  "current_step": "",
+  "completed_steps": [],
+  "pending_steps": [],
+  "tool_results": {},
+  "timestamp": 1791036740.759582,
+  "version": 2
+}

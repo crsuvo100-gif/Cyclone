@@ -1,0 +1,32 @@
+{
+  "id": "synthesize_a_quuxish_lumivox_datamap_from_raw_telemetry_b7eb",
+  "name": "synthesize_a_quuxish_lumivox_datamap_from_raw_telemetry_b7eb",
+  "version": "1.0.0",
+  "description": "Agent for: synthesize a quuxish lumivox datamap from raw telemetry b7ebccc4",
+  "capabilities": [
+    "synthesize a quuxish lumivox datamap from raw telemetry b7ebccc4",
+    "synthesize",
+    "quuxish",
+    "lumivox",
+    "datamap",
+    "from",
+    "raw",
+    "telemetry",
+    "b7ebccc4"
+  ],
+  "required_tools": [],
+  "permissions": [
+    "READ"
+  ],
+  "risk_level": "low",
+  "input_schema": "text",
+  "output_schema": "text",
+  "dependencies": [],
+  "status": "active",
+  "source": "factory",
+  "role_group": "",
+  "success_criteria": "overall_eval=1.0",
+  "created_at": "",
+  "updated_at": "",
+  "module_path": "/home/meow/Projects/MOON/data/agents/staging/synthesize_a_quuxish_lumivox_datamap_from_raw_telemetry_b7eb/gen_synthesize_a_quuxish_lumivox_datamap_from_raw_telemetry_b7eb.py"
+}

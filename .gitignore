@@ -1,0 +1,131 @@
+# ---------------------------------------------------------------
+# CYCLONE TERMINAL AI V10 — .gitignore
+# Generated: professional repo baseline
+# ---------------------------------------------------------------
+
+# ── Environment / secrets ───────────────────────────────────────
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+secret.yaml
+auth.json
+
+# ── Python ──────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg
+*.egg-info/
+.installed.cfg
+*.egg-info
+pip-wheel-metadata/
+!.README.md
+!.PKG-INFO
+!.SOURCES
+!.dependency_links.txt
+!.entry_points.txt
+!.top_level.txt
+
+# ── Virtual environments ────────────────────────────────────────
+venv/
+ENV/
+env/
+venv2/
+.venv/
+.env
+
+# ── Byte-compiled / optimization / caching ──────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.compile/*
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyre_version
+
+# ── Jupyter / Notebook ──────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── Node.js ─────────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+playwright-report/
+test-results/
+coverage/
+.next/
+dist/
+build/
+*.log
+
+# ── Server / runtime caches ─────────────────────────────────────
+.moon/
+.moon_logs/
+.continue/
+.codium/
+.ori/
+.vscode/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.dmypy.pkl
+
+# ── Logs & archives (kept locally, never committed) ─────────────
+*.log
+*.tmp
+*.bak
+*.backup
+*.tar.gz
+*.tgz
+*.zip
+*.swp
+*~
+
+# ── OS / editor junk ────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+.AppleDouble
+.Link
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+.idea/
+*.sln
+*.suo
+*.user
+*.userosscache
+*.tmp
+
+# ── MOON-specific generated artefacts ───────────────────────────
+moon_ai_agent.egg-info/
+.build/
+dist/
+home/
+```
+
+> **Note:** `.env`, `*.key`, `*.pem`, `*.bak`, `*.tar.gz`, `*.log` and all OS/editor artefacts are excluded. Never commit secrets — keep `CYCLONE_AI_API_KEY`, `OLLAMA_BASE_URL`, `HERMES_*` in your local `.env`.

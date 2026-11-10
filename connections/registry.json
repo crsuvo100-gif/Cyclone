@@ -1,0 +1,75 @@
+[
+  {
+    "name": "moon_local",
+    "kind": "agent",
+    "url": "http://127.0.0.1:11434/v1",
+    "model": "qwen3:0.6b",
+    "transport": "http",
+    "command": "",
+    "args": [],
+    "cwd": null,
+    "env": null,
+    "scope": "network.agent",
+    "permissions": [
+      "network.agent"
+    ],
+    "credential_ref": "",
+    "enabled": true,
+    "created_at": 1791070741.7657146,
+    "last_status": "ok",
+    "last_checked": 1793555394.5901437,
+    "metadata": {
+      "note": "Loopback peer: MOON-AI's own Ollama-compatible endpoint (default live connection)."
+    }
+  },
+  {
+    "name": "apidog",
+    "kind": "mcp",
+    "url": "",
+    "model": "",
+    "transport": "stdio",
+    "command": "npx",
+    "args": [
+      "-y",
+      "@byixlam/apidog-mcp"
+    ],
+    "cwd": null,
+    "env": {
+      "APIDOG_ACCESS_TOKEN": "[REDACTED]",
+      "APIDOG_TEAM_ID": "[REDACTED]"
+    },
+    "scope": "network.egress",
+    "permissions": [
+      "network.egress"
+    ],
+    "credential_ref": "APIDOG_ACCESS_TOKEN",
+    "enabled": true,
+    "created_at": 1793038946.4185276,
+    "last_status": "unreachable",
+    "last_checked": 1793555429.9192948,
+    "metadata": {
+      "source": "apidog",
+      "server": "https://github.com/ixlammm/apidog-mcp",
+      "note": "Apidog MCP via npx @byixlam/apidog-mcp. API key supplied by user is REDACTED and stored nowhere in this record; set APIDOG_ACCESS_TOKEN (and APIDOG_TEAM_ID) in MOON .env to activate."
+    }
+  },
+  {
+    "name": "cyclone",
+    "kind": "agent",
+    "url": "http://127.0.0.1:8765",
+    "model": "local",
+    "transport": "http",
+    "command": "",
+    "args": [],
+    "cwd": null,
+    "env": null,
+    "scope": "terminal",
+    "permissions": [],
+    "credential_ref": "",
+    "enabled": true,
+    "created_at": 1793139047.7915535,
+    "last_status": "ok",
+    "last_checked": 1793555429.9739509,
+    "metadata": {}
+  }
+]

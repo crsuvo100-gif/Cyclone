@@ -1,0 +1,21 @@
+# ---------------------------------------------------------------------------
+# CYCLONE TERMINAL AI V10 - Optional runtime extras (best-effort).
+# MOON works without these and degrades gracefully when absent.
+# Install with: pip install -r requirements-optional.txt
+# ---------------------------------------------------------------------------
+
+# PostgreSQL-backed cloud memory store
+# asyncpg>=0.29
+
+# Audio DSP / voice processing
+# scipy>=1.11
+
+# Offline female voice engine (kokoro)
+# kokoro-onnx>=0.1
+
+# Multilingual TTS language detection
+# langdetect>=1.0
+
+# Voice cloning (F5-TTS)
+# torch>=2.2
+# torchaudio>=2.2

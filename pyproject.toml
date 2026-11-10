@@ -1,0 +1,79 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cyclone-terminal-ai"
+version = "10.0.0"
+description = "CYCLONE TERMINAL AI V10 - local-first AI terminal with a holographic assistant"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [
+    { name = "CYCLONE Contributors", email = "crsuvo100@gmail.com" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Terminals",
+]
+dependencies = [
+    "fastapi>=0.141",
+    "uvicorn[standard]>=0.52",
+    "pydantic>=2.13",
+    "pydantic-settings>=2.15",
+    "anyio>=4.3",
+    "httpx>=0.27",
+    "requests>=2.31",
+    "openai>=2.53",
+    "numpy>=1.26",
+    "pandas>=2.0",
+    "python-dotenv>=1.0",
+    "rich>=13.7",
+    "tenacity>=8.2",
+    "PyYAML>=6.0",
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "ruff>=0.11",
+    "mypy>=1.10",
+]
+voice = [
+    "torch>=2.2",
+    "torchaudio>=2.2",
+    "numpy",
+]
+
+[project.scripts]
+cyclone = "main:main"
+
+[tool.setuptools]
+packages = ["app", "apps", "capabilities", "connections", "tasks", "tools"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+exclude = [".venv", "build", "dist", ".moon"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "UP", "B", "SIM"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+exclude = [".venv", "build", "dist", ".moon"]

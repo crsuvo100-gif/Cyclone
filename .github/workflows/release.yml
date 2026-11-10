@@ -1,0 +1,40 @@
+# CYCLONE TERMINAL AI V10 — Release workflow
+
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Create GitHub release
+        run: |
+          gh release create "${{ github.ref_name }}" \
+            --title "${{ github.ref_name }}" \
+            --generate-notes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build frontend artifact
+        run: |
+          npm ci
+          npm run build
+          tar -czf cyclone-frontend.tar.gz apps/ voices/ manifest.webmanifest
+        continue-on-error: true
+
+      - name: Upload release asset
+        run: |
+          gh release upload "${{ github.ref_name }}" cyclone-frontend.tar.gz
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

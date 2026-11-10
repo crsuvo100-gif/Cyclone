@@ -1,0 +1,24 @@
+# CYCLONE TERMINAL AI V10 — Security workflow
+
+name: Security
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # Daily at 06:00 UTC
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  dependabot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Enable Dependabot security updates
+        run: |
+          gh api --method PATCH /repos/${{ github.repository }} \
+            -f "security_and_analysis[github_secret_scanning][status]=enabled" \
+            -f "security_and_analysis[dependabot_security_updates][status]=enabled"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,17 @@
+{
+  "id": "HERMES",
+  "capabilities": [
+    "agent.inspection",
+    "architecture.analysis",
+    "code.generation",
+    "feature.development",
+    "tool.creation",
+    "testing",
+    "debugging",
+    "documentation",
+    "build.compilation",
+    "integration"
+  ],
+  "version": "1.0",
+  "protocol": "ipc"
+}

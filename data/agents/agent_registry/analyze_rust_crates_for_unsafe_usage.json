@@ -1,0 +1,28 @@
+{
+  "id": "analyze_rust_crates_for_unsafe_usage",
+  "name": "analyze_rust_crates_for_unsafe_usage",
+  "version": "1.0.0",
+  "description": "Agent for: analyze rust crates for unsafe usage",
+  "capabilities": [
+    "analyze rust crates for unsafe usage",
+    "rust",
+    "crates",
+    "unsafe",
+    "usage"
+  ],
+  "required_tools": [],
+  "permissions": [
+    "READ"
+  ],
+  "risk_level": "low",
+  "input_schema": "text",
+  "output_schema": "text",
+  "dependencies": [],
+  "status": "active",
+  "source": "factory",
+  "role_group": "",
+  "success_criteria": "overall_eval=1.0",
+  "created_at": "",
+  "updated_at": "",
+  "module_path": "/home/meow/Projects/MOON-AI/data/agents/staging/analyze_rust_crates_for_unsafe_usage/gen_analyze_rust_crates_for_unsafe_usage.py"
+}

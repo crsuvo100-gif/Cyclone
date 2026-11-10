@@ -1,0 +1,26 @@
+{
+  "name": "xai",
+  "slug": "xai",
+  "version": "0.3.0",
+  "description": "Explainable AI / exploratory data analysis toolkit for tabular data (normalisation, encoding, grouping, balancing, correlation, metrics, ROC/PR curves, feature importance).",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EthicalML/xai.git"
+  },
+  "location": "app/xai",
+  "requires": ["pandas (>=2.0)", "numpy", "scipy", "scikit-learn", "matplotlib"],
+  "capabilities": [
+    "analysis",
+    "exploration",
+    "tabular",
+    "ml-evaluation"
+  ],
+  "tools": [
+    {
+      "name": "xai_analysis",
+      "location": "app/tools/xai_analysis_tool.py",
+      "entry": "XAIAnalysisTool"
+    }
+  ],
+  "documentation": "https://github.com/EthicalML/xai"
+}
