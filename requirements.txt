@@ -34,6 +34,10 @@ PyYAML>=6.0
 pytest>=8.0
 pytest-asyncio>=0.23
 
+# Terminal UI framework (holographic HUD + MoonTerminalApp).
+# Imported at module import time by app/terminal/ui.py.
+textual>=8.2
+
 # Optional runtime extras (installed best-effort by install.sh;
 # MOON degrades gracefully when these are absent):
 #   asyncpg   -> PostgreSQL cloud memory store
