@@ -36,9 +36,11 @@ logger = logging.getLogger(__name__)
 class CoreSystemImplementation(CoreSystem):
     """Implementation of a core system."""
 
-    def __init__(self, name: str, config: dict[str, Any]) -> None:
-        self.name = name
-        self.config = config
+    def __init__(self, system_id: str = "", system_name: str = "", description: str = "", config: dict[str, Any] | None = None, manager: "CoreSystemManager" = None) -> None:
+        self.system_id = system_id
+        self.system_name = system_name
+        self.description = description
+        self.config = config if config is not None else {}
         self._running = False
         self._process: subprocess.Popen | None = None
         self._pid = 0
@@ -50,7 +52,7 @@ class CoreSystemImplementation(CoreSystem):
 
     @property
     def status(self) -> str:
-        return "running" if self._running else "stopped"
+        return "initial" if not self._running else "running"
 
     async def initialize(self, config: dict[str, Any]) -> dict[str, Any]:
         """Initialize the core system."""
@@ -146,9 +148,9 @@ class CoreSystemManagerImplementation(CoreSystemManager):
         system = CoreSystemImplementation(name, config)
         return system
 
-    async def register_system(self, system: CoreSystem) -> str:
+    def register_system(self, system: CoreSystem) -> str:
         """Register a system."""
-        system_id = system.name
+        system_id = system.system_id
         self._systems[system_id] = system
         logger.info(f"Core system registered: {system_id}")
         return system_id
@@ -169,6 +171,10 @@ class CoreSystemManagerImplementation(CoreSystemManager):
         """List all registered systems."""
         return list(self._systems.values())
 
+    def get_all_systems(self) -> list[CoreSystem]:
+        """Get all registered systems."""
+        return list(self._systems.values())
+
 
 async def initialize_core(config: dict[str, Any] | None = None) -> CoreSystem:
     """Initialize the core system."""
@@ -177,7 +183,7 @@ async def initialize_core(config: dict[str, Any] | None = None) -> CoreSystem:
         "version": "13.0",
         "port": 8777,
     })
-    await manager.register_system(system)
+    manager.register_system(system)
     return system
 
 

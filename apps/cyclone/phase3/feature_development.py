@@ -84,21 +84,78 @@ class TaskDefinitionImplementation(TaskDefinition):
         )
 
 
-@dataclass
 class FeatureDefinitionImplementation(FeatureDefinition):
     """Implementation of a feature definition."""
 
-    feature_id: str = ""
-    name: str = ""
-    description: str = ""
-    acceptance_criteria: list[str] = field(default_factory=list)
-    complexity: str = "medium"
-    priority: int = 1
-    status: str = "proposed"
-    created_at: float = field(default_factory=lambda: datetime.now().timestamp())
-    tags: list[str] = field(default_factory=list)
-    details: dict[str, Any] = field(default_factory=dict)
-    owner: str = "unassigned"
+    def __init__(
+        self,
+        feature_id: str = "",
+        name: str = "",
+        description: str = "",
+        acceptance_criteria: list[str] | None = None,
+        complexity: str = "medium",
+        priority: int = 1,
+        status: str = "draft",
+        created_at: float = 0.0,
+        tags: list[str] | None = None,
+        details: dict[str, Any] | None = None,
+        owner: str = "unassigned",
+    ) -> None:
+        self._feature_id = feature_id
+        self._name = name
+        self._description = description
+        self._acceptance_criteria = acceptance_criteria if acceptance_criteria is not None else []
+        self._complexity = complexity
+        self._priority = priority
+        self._status = status
+        self._created_at = created_at if created_at != 0.0 else datetime.now().timestamp()
+        self._tags = tags if tags is not None else []
+        self._details = details if details is not None else {}
+        self._owner = owner
+
+    @property
+    def feature_id(self) -> str:
+        return self._feature_id
+
+    @property
+    def name(self) -> str:
+        return self._name
+
+    @property
+    def description(self) -> str:
+        return self._description
+
+    @property
+    def acceptance_criteria(self) -> list[str]:
+        return self._acceptance_criteria
+
+    @property
+    def complexity(self) -> str:
+        return self._complexity
+
+    @property
+    def priority(self) -> int:
+        return self._priority
+
+    @property
+    def status(self) -> str:
+        return self._status
+
+    @property
+    def created_at(self) -> float:
+        return self._created_at
+
+    @property
+    def tags(self) -> list[str]:
+        return self._tags
+
+    @property
+    def details(self) -> dict[str, Any]:
+        return self._details
+
+    @property
+    def owner(self) -> str:
+        return self._owner
 
     def to_dict(self) -> dict[str, Any]:
         return {
@@ -124,7 +181,7 @@ class FeatureDefinitionImplementation(FeatureDefinition):
             acceptance_criteria=data.get("acceptance_criteria", []),
             complexity=data.get("complexity", "medium"),
             priority=data.get("priority", 1),
-            status=data.get("status", "proposed"),
+            status=data.get("status", "draft"),
             created_at=data.get("created_at", 0.0),
             tags=data.get("tags", []),
             details=data.get("details", {}),
@@ -144,20 +201,75 @@ class StepImplementation:
     order: int = 0
 
 
-@dataclass
 class ImplementationPlanImplementation(ImplementationPlan):
     """Implementation of an implementation plan."""
 
-    plan_id: str = ""
-    feature_id: str = ""
-    steps: list[dict[str, Any]] = field(default_factory=list)
-    dependencies: list[str] = field(default_factory=list)
-    estimated_hours: float = 0.0
-    status: str = "draft"
-    created_at: float = field(default_factory=lambda: datetime.now().timestamp())
-    updated_at: float = field(default_factory=lambda: datetime.now().timestamp())
-    executed_at: float = 0.0
-    results: dict[str, Any] = field(default_factory=dict)
+    def __init__(
+        self,
+        plan_id: str = "",
+        feature_id: str = "",
+        feature_name: str = "",
+        tasks: list[dict[str, Any]] | None = None,
+        steps: list[dict[str, Any]] | None = None,
+        dependencies: list[str] | None = None,
+        estimated_hours: float = 0.0,
+        status: str = "draft",
+        created_at: float = 0.0,
+        updated_at: float = 0.0,
+        executed_at: float = 0.0,
+        results: dict[str, Any] | None = None,
+    ) -> None:
+        self._plan_id = plan_id
+        self._feature_id = feature_id
+        self.feature_name = feature_name
+        self._steps = steps if steps is not None else (tasks if tasks is not None else [])
+        self._dependencies = dependencies if dependencies is not None else []
+        self._estimated_hours = estimated_hours
+        self._status = status
+        self._created_at = created_at
+        self._updated_at = updated_at
+        self._executed_at = executed_at
+        self._results = results if results is not None else {}
+
+    @property
+    def plan_id(self) -> str:
+        return self._plan_id
+
+    @property
+    def feature_id(self) -> str:
+        return self._feature_id
+
+    @property
+    def steps(self) -> list[dict[str, Any]]:
+        return self._steps
+
+    @property
+    def dependencies(self) -> list[str]:
+        return self._dependencies
+
+    @property
+    def estimated_hours(self) -> float:
+        return self._estimated_hours
+
+    @property
+    def status(self) -> str:
+        return self._status
+
+    @property
+    def created_at(self) -> float:
+        return self._created_at
+
+    @property
+    def updated_at(self) -> float:
+        return self._updated_at
+
+    @property
+    def executed_at(self) -> float:
+        return self._executed_at
+
+    @property
+    def results(self) -> dict[str, Any]:
+        return self._results
 
     @property
     def steps_list(self) -> list[StepImplementation]:

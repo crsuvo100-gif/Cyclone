@@ -60,7 +60,31 @@ voice = [
 cyclone = "main:main"
 
 [tool.setuptools]
-packages = ["app", "apps", "capabilities", "connections", "tasks", "tools"]
+py-modules = ["main"]
+
+[tool.setuptools.packages.find]
+where = [".", ]
+include = ["app*", "moon*"]
+
+[tool.setuptools.package-data]
+"app" = ["**"]
+"apps" = ["**"]
+"moon" = ["**"]
+
+[tool.setuptools.exclude-package-data]
+"app" = [
+    "xai/**",
+    "logs/**",
+    "images/**",
+    "fonts/**",
+    "_images/**",
+    "_sources/**",
+    "_static/**",
+    "scripts/**",
+    "examples/**",
+    "agent_states/**",
+    ".ipynb_checkpoints/**",
+]
 
 [tool.ruff]
 line-length = 100
