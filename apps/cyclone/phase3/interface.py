@@ -38,6 +38,14 @@ class CoreSystemError(Phase3Error):
     """Raised when core system operations fail."""
 
 
+class CoreSystemInitializationError(CoreSystemError):
+    """Raised when core system initialization fails."""
+
+
+class CoreSystemOperationError(CoreSystemError):
+    """Raised when a core system operation fails."""
+
+
 class TaskDefinition(ABC):
     """Abstract task definition for feature development."""
 
@@ -259,7 +267,7 @@ class CoreSystemManager(ABC):
         ...
 
     @abstractmethod
-    async def register_system(self, system: CoreSystem) -> str:
+    def register_system(self, system: CoreSystem) -> str:
         """Register a system."""
         ...
 
@@ -276,6 +284,11 @@ class CoreSystemManager(ABC):
     @abstractmethod
     async def list_systems(self) -> list[CoreSystem]:
         """List all registered systems."""
+        ...
+
+    @abstractmethod
+    def get_all_systems(self) -> list[CoreSystem]:
+        """Get all registered systems."""
         ...
 
 
