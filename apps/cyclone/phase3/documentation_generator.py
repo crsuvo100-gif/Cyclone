@@ -255,8 +255,9 @@ class DocumentationGeneratorImplementation(DocumentationGenerator):
 
         return "\n".join(models_doc)
 
-    @property
-    def generate_examples(self, templates: list[str]) -> str:
+
+    @staticmethod
+    def generate_examples(templates: list[str]) -> str:
         """Generate examples directory content."""
         examples = []
         examples.append("# Examples")

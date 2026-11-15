@@ -16,6 +16,8 @@ Usage:
 
 from __future__ import annotations
 
+import asyncio
+
 import logging
 import subprocess
 import sys
@@ -59,10 +61,10 @@ class CoreSystemImplementation(CoreSystem):
         merged_config = {**self.config, **config}
         self.config = merged_config
 
-        logger.info(f"Initializing core system: {self.name}")
+        logger.info(f"Initializing core system: {self.system_name}")
         return {
             "status": "initialized",
-            "name": self.name,
+            "name": self.system_name,
             "config": merged_config,
             "timestamp": time.time(),
         }
@@ -73,7 +75,7 @@ class CoreSystemImplementation(CoreSystem):
             raise CoreSystemOperationError("Core system is already running")
 
         try:
-            logger.info(f"Starting core system: {self.name}")
+            logger.info(f"Starting core system: {self.system_name}")
 
             # In a real implementation, start the actual server process
             # For now, simulate startup
@@ -84,7 +86,7 @@ class CoreSystemImplementation(CoreSystem):
 
             return {
                 "status": "started",
-                "name": self.name,
+                "name": self.system_name,
                 "pid": self._pid,
                 "timestamp": time.time(),
             }
@@ -97,7 +99,7 @@ class CoreSystemImplementation(CoreSystem):
             raise CoreSystemOperationError("Core system is not running")
 
         try:
-            logger.info(f"Stopping core system: {self.name}")
+            logger.info(f"Stopping core system: {self.system_name}")
 
             # In a real implementation, terminate the process
             await self._simulate_shutdown()
@@ -106,7 +108,7 @@ class CoreSystemImplementation(CoreSystem):
 
             return {
                 "status": "stopped",
-                "name": self.name,
+                "name": self.system_name,
                 "timestamp": time.time(),
             }
         except Exception as exc:
@@ -117,13 +119,13 @@ class CoreSystemImplementation(CoreSystem):
         if not self._running:
             return {
                 "status": "unhealthy",
-                "name": self.name,
+                "name": self.system_name,
                 "error": "System is not running",
             }
 
         return {
             "status": "healthy",
-            "name": self.name,
+            "name": self.system_name,
             "version": self.version,
             "uptime_seconds": time.time() - self._startup_time,
         }
