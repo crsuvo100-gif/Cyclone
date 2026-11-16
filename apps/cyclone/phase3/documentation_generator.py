@@ -89,15 +89,13 @@ class DocumentationGeneratorImplementation(DocumentationGenerator):
 
         return "".join(docs)
 
-    async def generate_readme(self, project_info: dict[str, Any]) -> str:
+    def generate_readme(self, project_name: str, project_version: str) -> str:
         """Generate README.md content."""
-        name = project_info.get("name", "Project")
-        version = project_info.get("version", "0.0.0")
-        description = project_info.get(
-            "description", f"{name} V{version} - Professional AI Agent System"
-        )
-        install = project_info.get("install", "pip install -r requirements.txt")
-        usage = project_info.get("usage", "python main.py")
+        name = project_name
+        version = project_version
+        description = f"{name} V{version} - Professional AI Agent System"
+        install = "pip install -r requirements.txt"
+        usage = "python main.py"
 
         readme = []
         readme.append("# " + name)
@@ -144,8 +142,7 @@ class DocumentationGeneratorImplementation(DocumentationGenerator):
         readme.append("Proprietary - All rights reserved.")
         readme.append("")
 
-        return "
-".join(readme)
+        return "\n".join(readme)
 
     async def generate_changelog(self, releases: list[dict[str, Any]]) -> str:
         """Generate CHANGELOG.md content."""
@@ -180,8 +177,7 @@ class DocumentationGeneratorImplementation(DocumentationGenerator):
             changelog.append("---")
             changelog.append("")
 
-        return "
-".join(changelog)
+        return "\n".join(changelog)
 
     async def generate_guidelines(self, project_name: str) -> str:
         """Generate CONTRIBUTING.md content."""
@@ -227,8 +223,7 @@ class DocumentationGeneratorImplementation(DocumentationGenerator):
         guidelines.append("```")
         guidelines.append("")
 
-        return "
-".join(guidelines)
+        return "\n".join(guidelines)
 
     async def generate_models(self, model_definitions: list[dict[str, Any]]) -> str:
         """Generate models documentation."""
@@ -258,11 +253,11 @@ class DocumentationGeneratorImplementation(DocumentationGenerator):
                 models_doc.append(f"| {f_name} | {f_type} | {required} | {f_desc} |")
             models_doc.append("")
 
-        return "
-".join(models_doc)
+        return "\n".join(models_doc)
 
-    @property
-    def generate_examples(self, templates: list[str]) -> str:
+
+    @staticmethod
+    def generate_examples(templates: list[str]) -> str:
         """Generate examples directory content."""
         examples = []
         examples.append("# Examples")
@@ -276,8 +271,7 @@ class DocumentationGeneratorImplementation(DocumentationGenerator):
             examples.append("Example code for " + template + "")
             examples.append("```")
             examples.append("")
-        return "
-".join(examples)
+        return "\n".join(examples)
 
 
 __all__ = ["DocumentationGeneratorImplementation"]

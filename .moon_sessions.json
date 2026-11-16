@@ -118,5 +118,605 @@
     "env": {},
     "name": "",
     "active": true
+  },
+  "5cd6eb35-bf9d-432f-b14c-2255fe2d05a2": {
+    "session_id": "5cd6eb35-bf9d-432f-b14c-2255fe2d05a2",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "test",
+    "active": true
+  },
+  "406d5b4c-53b4-4bb2-8a7f-c4cfcf1fd271": {
+    "session_id": "406d5b4c-53b4-4bb2-8a7f-c4cfcf1fd271",
+    "shell": "sh",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "eed4adcf-3119-45d0-9742-0a561e5e37a1": {
+    "session_id": "eed4adcf-3119-45d0-9742-0a561e5e37a1",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "058dea7f-86f9-417d-a39a-983a4b88eca8": {
+    "session_id": "058dea7f-86f9-417d-a39a-983a4b88eca8",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "new",
+    "active": true
+  },
+  "e04cbee5-21de-4284-b465-b4721e694341": {
+    "session_id": "e04cbee5-21de-4284-b465-b4721e694341",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "cc1f711c-12b4-4511-a60a-7079e426f7b9": {
+    "session_id": "cc1f711c-12b4-4511-a60a-7079e426f7b9",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "test",
+    "active": true
+  },
+  "7ed0f48c-892d-4521-805c-134631a3775b": {
+    "session_id": "7ed0f48c-892d-4521-805c-134631a3775b",
+    "shell": "sh",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "0f0b602a-2bfa-4737-87f1-9e9fbf65e688": {
+    "session_id": "0f0b602a-2bfa-4737-87f1-9e9fbf65e688",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "9d22ea25-e244-4a9d-bb98-648882d38aa8": {
+    "session_id": "9d22ea25-e244-4a9d-bb98-648882d38aa8",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "new",
+    "active": true
+  },
+  "e6bfcf9d-34b1-449e-969f-f3ef6f715ada": {
+    "session_id": "e6bfcf9d-34b1-449e-969f-f3ef6f715ada",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "3568ff48-02aa-4909-b608-0dde77641973": {
+    "session_id": "3568ff48-02aa-4909-b608-0dde77641973",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "test",
+    "active": true
+  },
+  "a8e3c936-c48d-445c-8781-104652127c10": {
+    "session_id": "a8e3c936-c48d-445c-8781-104652127c10",
+    "shell": "sh",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "90c92c84-5477-46e6-b535-095c0b9a643c": {
+    "session_id": "90c92c84-5477-46e6-b535-095c0b9a643c",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "f2e42e4a-d4e1-4241-94c9-a04a8f7bffb9": {
+    "session_id": "f2e42e4a-d4e1-4241-94c9-a04a8f7bffb9",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "new",
+    "active": true
+  },
+  "3377d8f7-2285-40b2-bee8-320b0fee20f2": {
+    "session_id": "3377d8f7-2285-40b2-bee8-320b0fee20f2",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "20437555-772c-4bbf-829b-1ed5a7b59493": {
+    "session_id": "20437555-772c-4bbf-829b-1ed5a7b59493",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "test",
+    "active": true
+  },
+  "ae721e50-2bfd-4531-8874-464c90aa730b": {
+    "session_id": "ae721e50-2bfd-4531-8874-464c90aa730b",
+    "shell": "sh",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "90d24f00-451d-4f2f-94ce-57421c6a5ff6": {
+    "session_id": "90d24f00-451d-4f2f-94ce-57421c6a5ff6",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "2bc802ab-1a97-4299-b3c0-3a9bc098f0a5": {
+    "session_id": "2bc802ab-1a97-4299-b3c0-3a9bc098f0a5",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "new",
+    "active": true
+  },
+  "d0f8bb93-2d84-4687-87b6-6f1f94b6b86e": {
+    "session_id": "d0f8bb93-2d84-4687-87b6-6f1f94b6b86e",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "9df95927-e463-4226-a5eb-b036e515b1e1": {
+    "session_id": "9df95927-e463-4226-a5eb-b036e515b1e1",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "test",
+    "active": true
+  },
+  "0b4b6b64-d2c6-4bd8-9156-553ddc70faea": {
+    "session_id": "0b4b6b64-d2c6-4bd8-9156-553ddc70faea",
+    "shell": "sh",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "377c1e7e-848b-4556-addb-d76ad7a33310": {
+    "session_id": "377c1e7e-848b-4556-addb-d76ad7a33310",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "57982ccd-1ddd-494d-a211-2c03b36a6504": {
+    "session_id": "57982ccd-1ddd-494d-a211-2c03b36a6504",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "new",
+    "active": true
+  },
+  "dbc42a6d-9d18-48cf-908f-66b307d9faa8": {
+    "session_id": "dbc42a6d-9d18-48cf-908f-66b307d9faa8",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "fb16a89f-67cf-43ae-ac2b-61e6896230c6": {
+    "session_id": "fb16a89f-67cf-43ae-ac2b-61e6896230c6",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "test",
+    "active": true
+  },
+  "dd56c7e7-a0eb-44f9-a3d1-230d32157256": {
+    "session_id": "dd56c7e7-a0eb-44f9-a3d1-230d32157256",
+    "shell": "sh",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "5fc08a4b-3408-47b3-9883-ca4dcc53a295": {
+    "session_id": "5fc08a4b-3408-47b3-9883-ca4dcc53a295",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "13d0a72c-ddc5-4c82-a171-79b5c81db229": {
+    "session_id": "13d0a72c-ddc5-4c82-a171-79b5c81db229",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "new",
+    "active": true
+  },
+  "8057b8c2-77fe-4e24-9131-052ebcb65fc7": {
+    "session_id": "8057b8c2-77fe-4e24-9131-052ebcb65fc7",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "2bb28452-96e2-4679-b021-844dbaba8cd6": {
+    "session_id": "2bb28452-96e2-4679-b021-844dbaba8cd6",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "test",
+    "active": true
+  },
+  "d18ce59d-6b42-4784-b17b-73c7995548ef": {
+    "session_id": "d18ce59d-6b42-4784-b17b-73c7995548ef",
+    "shell": "sh",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "703310e8-668f-4fac-b676-9d14d8f93351": {
+    "session_id": "703310e8-668f-4fac-b676-9d14d8f93351",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "5db39ee5-b912-4d21-a7b1-53a72a09b5e8": {
+    "session_id": "5db39ee5-b912-4d21-a7b1-53a72a09b5e8",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "new",
+    "active": true
+  },
+  "7f25e12e-62c4-4d09-950d-d01c65225fc8": {
+    "session_id": "7f25e12e-62c4-4d09-950d-d01c65225fc8",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "f3437de5-c566-4655-9573-798c2a5db5a0": {
+    "session_id": "f3437de5-c566-4655-9573-798c2a5db5a0",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "test",
+    "active": true
+  },
+  "39ee574d-3389-45b0-a327-451ff4111c61": {
+    "session_id": "39ee574d-3389-45b0-a327-451ff4111c61",
+    "shell": "sh",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "afb8a78d-420d-46bc-aec0-5739a03b5d79": {
+    "session_id": "afb8a78d-420d-46bc-aec0-5739a03b5d79",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "294008e0-c71d-4f06-b949-813a0a73a2c8": {
+    "session_id": "294008e0-c71d-4f06-b949-813a0a73a2c8",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "new",
+    "active": true
+  },
+  "c1ebdb5d-177f-4b3c-9cb4-0efeb7a5fa4b": {
+    "session_id": "c1ebdb5d-177f-4b3c-9cb4-0efeb7a5fa4b",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "ddec46cd-2518-45f6-81b5-b42f7e055e9e": {
+    "session_id": "ddec46cd-2518-45f6-81b5-b42f7e055e9e",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "test",
+    "active": true
+  },
+  "7789eda8-5c26-4753-891b-d34fdee48197": {
+    "session_id": "7789eda8-5c26-4753-891b-d34fdee48197",
+    "shell": "sh",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "1a884797-1357-49c1-862c-142047360414": {
+    "session_id": "1a884797-1357-49c1-862c-142047360414",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "1d1766ec-c49b-4431-9ae4-9eba6a5c0a13": {
+    "session_id": "1d1766ec-c49b-4431-9ae4-9eba6a5c0a13",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "new",
+    "active": true
+  },
+  "3ad4c4e2-d735-49f3-87ea-66f09d6f9629": {
+    "session_id": "3ad4c4e2-d735-49f3-87ea-66f09d6f9629",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "ee17d0e2-8250-4688-b6a0-35c8e1bd8770": {
+    "session_id": "ee17d0e2-8250-4688-b6a0-35c8e1bd8770",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "test",
+    "active": true
+  },
+  "9715bdaa-e010-4f12-bc31-bfba6c5c2844": {
+    "session_id": "9715bdaa-e010-4f12-bc31-bfba6c5c2844",
+    "shell": "sh",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "0093eb12-46ec-429a-a728-6823564bb2fc": {
+    "session_id": "0093eb12-46ec-429a-a728-6823564bb2fc",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "8c6a0a54-81d1-42c5-a2d4-89774e0484d2": {
+    "session_id": "8c6a0a54-81d1-42c5-a2d4-89774e0484d2",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "new",
+    "active": true
+  },
+  "ec928926-a4fd-44da-ba3f-43e261c31dfa": {
+    "session_id": "ec928926-a4fd-44da-ba3f-43e261c31dfa",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "56b04b7f-a50b-4cd2-9662-bdb55f61d11b": {
+    "session_id": "56b04b7f-a50b-4cd2-9662-bdb55f61d11b",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "test",
+    "active": true
+  },
+  "0e4cb511-8e68-46e1-a727-8af76a9440de": {
+    "session_id": "0e4cb511-8e68-46e1-a727-8af76a9440de",
+    "shell": "sh",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "653e6747-861f-4624-8dc0-7d3255215f08": {
+    "session_id": "653e6747-861f-4624-8dc0-7d3255215f08",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "567eb9d5-b157-4040-8c2e-cb3bbe204e45": {
+    "session_id": "567eb9d5-b157-4040-8c2e-cb3bbe204e45",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "new",
+    "active": true
+  },
+  "5fa46a97-2a83-4354-a760-3072c89bb417": {
+    "session_id": "5fa46a97-2a83-4354-a760-3072c89bb417",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "ab7a1714-e3ac-4c5f-be6c-fa9a275b31bb": {
+    "session_id": "ab7a1714-e3ac-4c5f-be6c-fa9a275b31bb",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "test",
+    "active": true
+  },
+  "af3f2866-c273-4d98-a813-d58a1f7cc691": {
+    "session_id": "af3f2866-c273-4d98-a813-d58a1f7cc691",
+    "shell": "sh",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "4351f8c2-74cc-4365-991b-752a47bbdfca": {
+    "session_id": "4351f8c2-74cc-4365-991b-752a47bbdfca",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "4635cd03-56ea-4fb3-ad42-906786540fe6": {
+    "session_id": "4635cd03-56ea-4fb3-ad42-906786540fe6",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "new",
+    "active": true
+  },
+  "f479bc2b-c3b0-4c7d-be5a-7e1dc3826477": {
+    "session_id": "f479bc2b-c3b0-4c7d-be5a-7e1dc3826477",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "12382267-4dfd-46b2-a575-6cc8a31c4998": {
+    "session_id": "12382267-4dfd-46b2-a575-6cc8a31c4998",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "test",
+    "active": true
+  },
+  "60a49f7b-8cf2-4619-afe8-cdcda0689318": {
+    "session_id": "60a49f7b-8cf2-4619-afe8-cdcda0689318",
+    "shell": "sh",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "0bf66265-fa81-44b6-9f11-f32fe7c67eea": {
+    "session_id": "0bf66265-fa81-44b6-9f11-f32fe7c67eea",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "cb2bc7ce-be6e-40e8-b151-72b10704da32": {
+    "session_id": "cb2bc7ce-be6e-40e8-b151-72b10704da32",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "new",
+    "active": true
+  },
+  "7c0e369e-90ae-4e10-aaae-378e9acb0985": {
+    "session_id": "7c0e369e-90ae-4e10-aaae-378e9acb0985",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "284ce63e-f5ea-44e5-bd12-257abe6aada8": {
+    "session_id": "284ce63e-f5ea-44e5-bd12-257abe6aada8",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "test",
+    "active": true
+  },
+  "337598e5-39c8-4ebe-a445-30d67df65282": {
+    "session_id": "337598e5-39c8-4ebe-a445-30d67df65282",
+    "shell": "sh",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "3cf809af-54bc-4592-8eb1-4c3e3b3e4342": {
+    "session_id": "3cf809af-54bc-4592-8eb1-4c3e3b3e4342",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "68a6e83f-e709-47c2-8566-357ddcc3b543": {
+    "session_id": "68a6e83f-e709-47c2-8566-357ddcc3b543",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "new",
+    "active": true
+  },
+  "ec584b3c-3551-4fa0-994f-d5b752aef80c": {
+    "session_id": "ec584b3c-3551-4fa0-994f-d5b752aef80c",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "fca7b9da-186e-4a40-8cdf-a42c31d0a67a": {
+    "session_id": "fca7b9da-186e-4a40-8cdf-a42c31d0a67a",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "test",
+    "active": true
+  },
+  "a3fc52ff-2ea6-426b-a3f6-31ed028d56d3": {
+    "session_id": "a3fc52ff-2ea6-426b-a3f6-31ed028d56d3",
+    "shell": "sh",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "558082f6-860c-4ae6-b17b-618fcda653c8": {
+    "session_id": "558082f6-860c-4ae6-b17b-618fcda653c8",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
+  },
+  "91cab370-f50b-44a2-b7af-c6b9d6d8fd2c": {
+    "session_id": "91cab370-f50b-44a2-b7af-c6b9d6d8fd2c",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "new",
+    "active": true
+  },
+  "ab2f14e8-7636-4039-9980-45465a3950e0": {
+    "session_id": "ab2f14e8-7636-4039-9980-45465a3950e0",
+    "shell": "bash",
+    "cwd": "/home/meow/Projects/Cyclone",
+    "env": {},
+    "name": "",
+    "active": true
   }
 }

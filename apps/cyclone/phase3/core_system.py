@@ -16,6 +16,8 @@ Usage:
 
 from __future__ import annotations
 
+import asyncio
+
 import logging
 import subprocess
 import sys
@@ -36,9 +38,11 @@ logger = logging.getLogger(__name__)
 class CoreSystemImplementation(CoreSystem):
     """Implementation of a core system."""
 
-    def __init__(self, name: str, config: dict[str, Any]) -> None:
-        self.name = name
-        self.config = config
+    def __init__(self, system_id: str = "", system_name: str = "", description: str = "", config: dict[str, Any] | None = None, manager: "CoreSystemManager" = None) -> None:
+        self.system_id = system_id
+        self.system_name = system_name
+        self.description = description
+        self.config = config if config is not None else {}
         self._running = False
         self._process: subprocess.Popen | None = None
         self._pid = 0
@@ -50,17 +54,17 @@ class CoreSystemImplementation(CoreSystem):
 
     @property
     def status(self) -> str:
-        return "running" if self._running else "stopped"
+        return "initial" if not self._running else "running"
 
     async def initialize(self, config: dict[str, Any]) -> dict[str, Any]:
         """Initialize the core system."""
         merged_config = {**self.config, **config}
         self.config = merged_config
 
-        logger.info(f"Initializing core system: {self.name}")
+        logger.info(f"Initializing core system: {self.system_name}")
         return {
             "status": "initialized",
-            "name": self.name,
+            "name": self.system_name,
             "config": merged_config,
             "timestamp": time.time(),
         }
@@ -71,7 +75,7 @@ class CoreSystemImplementation(CoreSystem):
             raise CoreSystemOperationError("Core system is already running")
 
         try:
-            logger.info(f"Starting core system: {self.name}")
+            logger.info(f"Starting core system: {self.system_name}")
 
             # In a real implementation, start the actual server process
             # For now, simulate startup
@@ -82,7 +86,7 @@ class CoreSystemImplementation(CoreSystem):
 
             return {
                 "status": "started",
-                "name": self.name,
+                "name": self.system_name,
                 "pid": self._pid,
                 "timestamp": time.time(),
             }
@@ -95,7 +99,7 @@ class CoreSystemImplementation(CoreSystem):
             raise CoreSystemOperationError("Core system is not running")
 
         try:
-            logger.info(f"Stopping core system: {self.name}")
+            logger.info(f"Stopping core system: {self.system_name}")
 
             # In a real implementation, terminate the process
             await self._simulate_shutdown()
@@ -104,7 +108,7 @@ class CoreSystemImplementation(CoreSystem):
 
             return {
                 "status": "stopped",
-                "name": self.name,
+                "name": self.system_name,
                 "timestamp": time.time(),
             }
         except Exception as exc:
@@ -115,13 +119,13 @@ class CoreSystemImplementation(CoreSystem):
         if not self._running:
             return {
                 "status": "unhealthy",
-                "name": self.name,
+                "name": self.system_name,
                 "error": "System is not running",
             }
 
         return {
             "status": "healthy",
-            "name": self.name,
+            "name": self.system_name,
             "version": self.version,
             "uptime_seconds": time.time() - self._startup_time,
         }
@@ -146,9 +150,9 @@ class CoreSystemManagerImplementation(CoreSystemManager):
         system = CoreSystemImplementation(name, config)
         return system
 
-    async def register_system(self, system: CoreSystem) -> str:
+    def register_system(self, system: CoreSystem) -> str:
         """Register a system."""
-        system_id = system.name
+        system_id = system.system_id
         self._systems[system_id] = system
         logger.info(f"Core system registered: {system_id}")
         return system_id
@@ -169,6 +173,10 @@ class CoreSystemManagerImplementation(CoreSystemManager):
         """List all registered systems."""
         return list(self._systems.values())
 
+    def get_all_systems(self) -> list[CoreSystem]:
+        """Get all registered systems."""
+        return list(self._systems.values())
+
 
 async def initialize_core(config: dict[str, Any] | None = None) -> CoreSystem:
     """Initialize the core system."""
@@ -177,7 +185,7 @@ async def initialize_core(config: dict[str, Any] | None = None) -> CoreSystem:
         "version": "13.0",
         "port": 8777,
     })
-    await manager.register_system(system)
+    manager.register_system(system)
     return system
 
 

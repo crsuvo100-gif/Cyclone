@@ -39,13 +39,11 @@ from .feature_development import (
     VersionManager,
 )
 
-from .documentation_generator import (
-    DocumentationGenerator,
-)
+from .documentation_generator import DocumentationGeneratorImplementation as DocumentationGenerator
 
 from .core_system import (
-    CoreSystem,
-    CoreSystemManager,
+    CoreSystemImplementation as CoreSystem,
+    CoreSystemManagerImplementation as CoreSystemManager,
 )
 
 __version__ = "1.0.0"
