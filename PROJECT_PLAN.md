@@ -2,7 +2,7 @@
 
 ## Project Overview
 - **Project Name:** Cyclone.0 (MOON V13.0 Extension)
-- **Project Root:** /home/meow/Projects/MOON/Cyclone
+- **Project Root:** /home/meow/Projects/Cyclone
 - **Type:** Local-first AI terminal ecosystem (Python backend + Node.js frontend + Voice + Agent connectors)
 - **Status:** IN PROGRESS
 
@@ -14,7 +14,7 @@
 5. [ ] Milestone 5: Voice & Multimodal Intelligence
 6. [ ] Milestone 6: Security, Observability & Recovery
 7. [ ] Milestone 7: UI/UX Redesign (Holographic)
-8. [ ] Milestone 8: GitHub Delivery Setup
+8. [x] Milestone 8: GitHub Delivery Setup (COMPLETE)
 
 ## Architecture
 - **Backend:** Python 3.10+, FastAPI, Ollama (25 models)
